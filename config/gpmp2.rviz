@@ -1,0 +1,39 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+Visualization Manager:
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      
+    - Class: rviz_default_plugins/TF
+      Name: TF
+      Enabled: true
+      
+    - Class: rviz_default_plugins/Map
+      Name: Map
+      Enabled: true
+      Topic:
+        Value: /map
+        
+    - Class: rviz_default_plugins/Path
+      Name: GPMP2 Path
+      Enabled: true
+      Topic:
+        Value: /gpmp2_path
+      Line Style:
+        Value: Lines
+      Color: 0; 255; 0
+      
+    - Class: rviz_default_plugins/RobotModel
+      Name: RobotModel
+      Enabled: true
+      Description Topic:
+        Value: /robot_description
+        
+  Global Options:
+    Fixed Frame: map
+    Frame Rate: 30

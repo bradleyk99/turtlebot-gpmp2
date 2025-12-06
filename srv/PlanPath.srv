@@ -1,0 +1,9 @@
+# Request: Data needed to plan a path
+nav_msgs/OccupancyGrid map
+geometry_msgs/Pose start
+geometry_msgs/Pose goal
+---
+# Response: The planned path and success flag
+nav_msgs/Path path
+bool success
+string message
