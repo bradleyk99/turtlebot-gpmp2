@@ -67,6 +67,7 @@ install(PROGRAMS
 
 # Install launch and config directories
 install(DIRECTORY
+  maps
   launch
   config
   DESTINATION share/${PROJECT_NAME}
