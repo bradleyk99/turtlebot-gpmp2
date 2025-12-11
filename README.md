@@ -1,3 +1,5 @@
+This Readme is in need of work
+
 # Dependencies
 - GPMP2 Library (Requires GTSAM Library which is also used)
 - ROS2 Jazzy
@@ -9,5 +11,6 @@ Following sourcing the directory to launch the entire simulation in Gazebo and R
 The specific simulation world can be selected from one of the three built in Turtlebot3 simulation world through
 `ros2 launch gpm2_planner gpmp2_planning.launch.py world:="house"`
 "house", "world", and "empty" are available
+With the code setup as currently to pull the map from a map file, only world runs correctly.
 
 Within RVIZ, goal pose can be set to direct the robot to use GPMP2 to plan a path to the goal pose. To view the path trajectory, add it by topic in RVIZ to view.
